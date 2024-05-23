@@ -83,7 +83,7 @@ p{font-family: 'Times New Roman', Times, serif;}
 /* ================================
    SERVICE SECTION CSS
 ================================ */
-/* .service-section { padding:30px 30px 30px }
+.service-section { padding:30px 30px 30px }
 .service-section .service-item .service-item-inner {background-color: var(--bg-black-100); border: 1px solid var(--bg-black-50); border-radius: 10px; padding: 30px 15px; text-align: center; transition: all 0.5s ease; height:100% }
 .service-section .service-item .service-item-inner:hover {box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); transform: scale(1.03); }
 .service-section .service-item .service-item-inner .icon { height: 60px; width: 60px; border-radius: 50%; display: block; margin: 0 auto 30px; text-align: center; transition: all 0.5s ease; }
@@ -91,7 +91,7 @@ p{font-family: 'Times New Roman', Times, serif;}
 .service-section .service-item .service-item-inner:hover .icon {background-color: var(--skin-color); }
 .service-section .service-item .service-item-inner:hover .icon .fa {font-size: 25px; color: #fff; }
 .service-section .service-item-inner p {font-size: 16px; color: var(--text-black-700); line-height: 25px; }
-.service-section .service-item-inner h4 { color: var(--text-black-900);} */
+.service-section .service-item-inner h4 { color: var(--text-black-900);}
 
 
 /* ================================
