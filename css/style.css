@@ -1,0 +1,195 @@
+/* ================================
+   COLORS VARIABLES
+================================ */
+:root {--bg-black-900: #f2f2fc; --bg-black-100: #fdf9ff; --bg-black-50: #e8dfec; --text-black-900: #302e4d; --text-black-700: #504e70; --skin-color: #21b2cbe3; --box-shadow: rgba(48, 46, 77, 0.5);  }
+body.dark {--bg-black-900: #131313; --bg-black-100: #222222; --bg-black-50: #e8dfec; --text-black-900: #ffffff; --text-black-700: #e9e9e9; --box-shadow: rgba(201, 218, 220, 0.5); }
+
+/* ================================
+   COMMON CSS
+================================ */
+body { line-height: 1.5; font-family: 'poppins' sans-serif; font-size: 16px; }
+.dark-thame { background: var(--bg-black-900);opacity: 1; }
+.main-contant { margin-left: 250px; }
+a.active{ translate: 30px;background: 0 0 !important;color: var(--skin-color) !important; }
+.max-margin { margin:50px 0px 20px }
+
+/* ================================ 
+   BUTTONS CSS
+================================ */
+p{font-family: 'Times New Roman', Times, serif;}
+.special-btn { font-size: 16px; font-weight: 600; padding: 12px 35px; color: #fff; border-radius: 40px; border: 1px solid var(--skin-color); background: var(--skin-color); text-shadow: #131313 0px 0px 2px; transition: all 0.3s ease; margin: 20px 0px 30px; }
+.special-btn:hover { background: #fff; color: var(--skin-color); border-color: var(--skin-color); text-shadow: #ffffff 0px 0px 21px; transform: translate(-10px, -5px); box-shadow: 8px 8px 0px 0px var(--skin-color); }
+.shadow-dark {box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); }
+
+/* ================================
+   MAIN TITLES CSS
+================================ */
+.section-title { position: relative; font-size: 50px; color: var(--text-black-900); font-weight: 700; margin-bottom:40px; }
+.section-title::before {content: ''; height: 4px; width: 50px; background-color: var(--skin-color); position: absolute; top: 100%; left: 0; }
+.section-title::after {content: ''; height: 4px; width: 25px; background-color: var(--skin-color); position: absolute; top: 100%; left: 0; margin-top: 8px; }
+.main-title{color: var(--text-black-900); font-size: 42px; margin: 15px 0; }
+.main-title span {font-family: 'Pacifico', cursive;font-size: 45px; font-weight: 700px; color: var(--skin-color); }
+.sub-title { font-family: 'poppins' sans-serif; color: var(--text-black-900); font-size: 35px; font-weight:900 }
+.sub-pera { font-size: 26px; color: var(--text-black-900); }
+.typing-js {color: var(--skin-color); transition: all 0s ease }
+
+/* ================================
+   SIDEBAR MANU CSS
+================================ */
+.sidebar-section { max-width: 270px;background: var(--bg-black-100); position: fixed; padding: 30px; left: 0; top: 0; border-right: 1px solid var(--bg-black-50); z-index: 10; }
+.sidebar-section .logo { position: relative; top: 5px; }
+.sidebar-section .logo a img{ width: 150px; }
+.sidebar-section .nav { margin-top: 100px; }
+.sidebar-section .nav .nav-item { margin-bottom: 20px; display: block; }
+.sidebar-section .nav .nav-item .nav-link { font-size: 20px; font-weight: 600; display: block; border-bottom: 1px solid var(--bg-black-50); color: var(--text-black-900); padding: 5px 15px; transition: translate 0.3s ease, color 0s ease; }
+.sidebar-section .nav .nav-item .nav-link:hover{ translate: 30px; }
+.sidebar-section .nav .nav-item .nav-link i { margin-right: 15px; }
+
+/* ================================
+   HOME SECTION CSS
+================================ */
+.home-section { padding:50px 30px 0px; background: var(--bg-black-900); }
+.home-section .my-img img { outline: 5px dashed var(--skin-color); padding: 10px; box-shadow: 7px 7px 0px 0px var(--skin-color); }
+.home-section .my-img { top: -38px }
+
+/* ================================
+   ABOUT SECTION CSS
+================================ */
+.about-section { padding: 50px 30px 30px; }
+.about-section .some-about-me h3 { color: var(--text-black-900); }
+.about-section .personal-info .info-item {flex: 0 0 50%; max-width: 50%;}
+.about-section .personal-info .info-item p { font-size: 20px; color: var(--text-black-900); font-weight: 700; border-bottom: 1px solid var(--bg-black-50); padding: 10px 0; margin-bottom: 0 }
+.about-section .personal-info .info-item p span {font-weight: 400; margin-left: 4px; }
+
+.about-section .skill-info .skill-item { position: relative;}
+.about-section .skill-info .skill-item h5 {line-height: 1.2; font-size: 20px; color: var(--text-black-900);}
+.about-section .skill-info .skill-item .progress { position: relative; background-color: var(--bg-black-50); height: 7px; border-radius: 4px; width: 100%; }
+.about-section .skill-info .skill-item .skill-percent { color: var(--text-black-900); font-weight: 400; line-height: 40px; float: right; position:absolute; top: -6px; right: 0; }
+.about-section .skill-info .skill-item .progress .progress-in { position: absolute; left: 0; top: 0; height: 100%; border-radius: 4px; background-color: var(--skin-color); }
+
+.about-section .title { color: var(--text-black-900); margin-bottom: 20px }
+.about-section .timeline-box {flex: 0 0 100%; max-width: 100%; }
+.about-section .timeline-box .timeline {background-color: var(--bg-black-100); padding: 30px 15px; border: 1px solid var(--bg-black-50); border-radius: 10px; width: 100%; position: relative; }
+.about-section .timeline-box .timeline .timeline-item {position: relative; padding-left: 37px; padding-bottom: 50px; }
+.about-section .timeline-box .timeline .timeline-item:last-child {padding-bottom: 0; }
+.about-section .timeline-box .timeline .timeline-item::before {content: ''; width: 1px; position: absolute; height: 100%; left: 7px; top: 0; background-color: var(--skin-color); }
+.about-section .timeline-box .timeline .circle-dot {position: absolute; left: 0; top: 0; height: 15px; width: 15px; border-radius: 50%; background-color: var(--skin-color); }
+.about-section .timeline-box .timeline .timeline-date {font-weight: 400; font-size: 16px; margin-bottom: 12px; color: var(--text-black-700); }
+.about-section .timeline-box .timeline .timeline-date .fa {margin-right: 10px; }
+.about-section .timeline-box .timeline .timeline-title {font-weight: 700; font-size: 21px; margin-bottom: 15px; text-transform: capitalize; color: var(--text-black-900); }
+.about-section .timeline-box .timeline ul .timeline-text { position: relative; font-size: 20px; color: var(--text-black-700); list-style-type: none; padding-left: 30px; margin-bottom: 10px; }
+.about-section .timeline-box .timeline ul .timeline-text::before { position: absolute; content: ''; width: 20px; height: 20px; background: url(../images/true-icon.svg) no-repeat; background-position: center; background-size: cover; left: 0; top: 5px; }
+
+/* ================================
+   SERVICE SECTION CSS
+================================ */
+/* .service-section { padding:30px 30px 30px }
+.service-section .service-item .service-item-inner {background-color: var(--bg-black-100); border: 1px solid var(--bg-black-50); border-radius: 10px; padding: 30px 15px; text-align: center; transition: all 0.5s ease; height:100% }
+.service-section .service-item .service-item-inner:hover {box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); transform: scale(1.03); }
+.service-section .service-item .service-item-inner .icon { height: 60px; width: 60px; border-radius: 50%; display: block; margin: 0 auto 30px; text-align: center; transition: all 0.5s ease; }
+.service-section .service-item .service-item-inner .icon .fa {font-size: 40px; line-height: 60px; color: var(--skin-color); transition: all 0.5s ease; }
+.service-section .service-item .service-item-inner:hover .icon {background-color: var(--skin-color); }
+.service-section .service-item .service-item-inner:hover .icon .fa {font-size: 25px; color: #fff; }
+.service-section .service-item-inner p {font-size: 16px; color: var(--text-black-700); line-height: 25px; }
+.service-section .service-item-inner h4 { color: var(--text-black-900);} */
+
+
+/* ================================
+   PORTFOLIO SECTION CSS
+================================ */
+.portfolio-section { padding:50px 30px 30px; }
+.portfolio-section .portfolio-item-inner {border: 6px solid var(--bg-black-100); border-radius: 10px; overflow: hidden; cursor: pointer; }
+.portfolio-section .portfolio-item-inner:hover { box-shadow: 0 0 20px var(--box-shadow); }
+.portfolio-section .portfolio-item-inner .portfolio-img img { transition: all 0.7s ease; }
+.portfolio-section .portfolio-item-inner .portfolio-img { transition: all 0.4s ease; }
+.portfolio-section .portfolio-item-inner:hover .portfolio-img{ box-shadow: 0 0 20px var(--box-shadow); transform: translate(20px ,20px); }
+.portfolio-section .portfolio-item-inner:hover .portfolio-img img{ box-shadow: 0 0 20px var(--box-shadow); transform: translate(20px ,20px); }
+
+/* ================================
+   CONTACT SECTION CSS
+================================ */
+.contact-section { padding:50px 30px 230px; }
+.contact-section .contact-titles h3 {color: var(--skin-color); text-align: center; font-size: 32px; margin-bottom: 20px; } 
+.contact-section .contact-titles h4 {color: var(--text-black-900); text-align: center; font-size: 20px; margin-bottom: 60px; }
+.contact-section .contact-info-item { border-right: 1px solid var(--text-black-900); border-bottom: 1px solid var(--text-black-900); border-left: 1px solid var(--text-black-900); transition: all 0.4s ease; }
+.contact-section .contact-info-item:hover { transform: translate(0px,-10px); box-shadow: 0px 6px 7px 0px var(--box-shadow); }
+.contact-section .contact-info-item .icon {display: inline-block; }
+.contact-section .contact-info-item .icon .fa {font-size: 25px; color: var(--skin-color); }
+.contact-section .contact-info-item h4 {font-size: 22px; font-weight: 700; color: var(--text-black-900); margin: 15px 0 5px; }
+.contact-section .contact-info-item p {font-size: 20px; line-height: 25px; color: var(--text-black-700); font-weight: 700; }
+
+.contact-section form .form-control {width: 100%; border-radius: 25px; background: var(--bg-black-100); border: 1px solid var(--bg-black-50); padding: 10px 25px; font-size: 16px; color: var(--text-black-700); transition: all 0.3s ease; margin-bottom: 20px }
+.contact-section form .form-control::placeholder { color: var(--text-black-700); }
+.contact-section form .form-control:hover {border-color: #1c6b88d0;}
+.contact-section form .form-control:focus {box-shadow: 0 0 18px 0px var(--bg-black-50); }
+.contact-section form textarea.form-control {height: 140px; }
+
+/* ================================
+   HOME SECTION CSS
+================================ */
+@media screen and (min-width:1800px) {
+   .main-contant { margin-left: 0px !important; }
+}
+
+@media screen and (min-width:1600px) {
+   .main-contant { margin-left: 210px; }
+}
+@media screen and (min-width:1200px) {
+   .container{max-width: 1300px}
+}
+
+@media screen and (max-width:1400px) {
+   .main-title { font-size: 35px; }
+   .main-title span { font-size: 37px; }  
+   .sub-title { font-size: 29px; }
+   .sub-pera { font-size: 23px; }
+}
+
+@media screen and (max-width:1200px) {
+   .section-title { font-size: 40px; }
+   .sidebar-section .nav .nav-item .nav-link { font-size: 18px; }
+}
+
+@media screen and (max-width:991px){
+   .container, .container-md, .container-sm { max-width: 100%; }
+   .about-section .timeline-box .timeline { height: auto; }
+      /* MAIN-CONTANT */
+      .main-contant { margin-left: 0 }
+      /* SIDEBAR SECTION */
+      .sidebar-section { position:static; max-width: unset; background: transparent; height: auto !important; }
+      .sidebar-section .hamburger-menu {position: relative; width: 26px; height: 24px; transition: .5s ease-in-out; cursor: pointer; margin-left: 20px;}
+      .sidebar-section .hamburger-menu.second.open { z-index: 111; }
+      .sidebar-section .hamburger-menu span {display: block; position: absolute; height: 3px; width: 100%; background: #131313; border-radius: 10px; opacity: 1; left: 0; transition: .25s ease-in-out;}
+      .sidebar-section .hamburger-menu span:nth-child(1) {top: 2px;}
+      .sidebar-section .hamburger-menu span:nth-child(2), 
+      .sidebar-section .hamburger-menu span:nth-child(3) {top: 10px;}
+      .sidebar-section .hamburger-menu span:nth-child(4) {top: 18px;}
+      .sidebar-section .hamburger-menu.open span:nth-child(1) {top: 18px; width: 0; left: 50%;}
+      .sidebar-section .hamburger-menu.open span:nth-child(2) {transform: rotate(45deg);}
+      .sidebar-section .hamburger-menu.open span:nth-child(3) {transform: rotate(-45deg);}
+      .sidebar-section .hamburger-menu.open span:nth-child(4) {top: 18px; width: 0; left: 50%;}
+      .sidebar-section .navbar-collapse {position: fixed; top: 0; left: -375px; bottom: 0; width: 100%; height: 100vh !important; max-width: 375px; z-index: 1025; background-color: #fff; display: block; transition: all 0.35s; padding-top: 55px; overflow-x: auto;}
+      .sidebar-section .navbar-collapse.show {left: 0;}
+      .sidebar-section .navbar-collapse .hamburger-menu { position: absolute; left: 12px; top: 32px; }
+      .sidebar-section .navbar-collapse.show .hamburger-menu {position: fixed; z-index: 9999;}
+      .sidebar-section .nav-link {display: inline-block;}
+      .sidebar-section .navbar-overlay {display: block; opacity: 0; position: fixed; top: 0; bottom: 0; right: 0; left: 0; background-color: rgba(0,0,0,.6); transition: opacity .35s .1s; pointer-events: none;}
+      .sidebar-section .navbar-overlay.show {pointer-events: all; opacity: 1; z-index: 50; transition: opacity .35s .1s;}
+      .sidebar-section .nav .nav-item .nav-link { padding: 10px 90px; }
+      .sidebar-section .nav { margin: 90px 25px; }
+      /*  */
+      .contact-section { padding: 50px 30px 100px; }
+}
+
+@media screen and (max-width:767px) {
+
+
+}
+@media screen and (max-width:575px) {
+/* ABOUT SECTION */
+   .about-section .personal-info .info-item { max-width:100% }
+}
+
+@media screen and (max-width:480px) {
+   .special-btn { margin: 10px 0px; }
+}
